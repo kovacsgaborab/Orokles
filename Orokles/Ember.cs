@@ -8,5 +8,18 @@ namespace Orokles
 {
     class Ember
     {
+        protected string nev;
+        protected int eletkor;
+
+        public Ember(string nev, int eletkor)
+        {
+            this.nev = nev;
+            this.eletkor = eletkor;
+        }
+
+        public void Koszon()
+        {
+            Console.WriteLine($"{nev} vagyok, {eletkor} éves");
+        }
     }
 }
